@@ -1,0 +1,87 @@
+main {
+
+    padding: 20px;
+    
+    & .hero {
+        border-radius: 24px;
+        height: 400px;
+        background-image: url(/assets/estadio-roberto-melendez.webp);
+        background-position: center;
+        background-size: cover;
+        margin: 20px 0px;
+
+        position: relative;
+
+        & div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.50);
+            border-radius: 24px;
+            padding: 20px;
+            color: #E0E0E0;
+
+            & h1 {
+                font-family: 'Playwrite CU', cursive;
+                margin-top: 100px;
+            }
+        }
+
+    }
+
+    & .carrusel {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        & #carnaval {
+            background-image: url(/assets/carnaval.jpg);    
+        }
+
+        & #lugares-turisticos {
+            background-image: url(/assets/shakira.webp);
+        }
+
+        & #historia {
+            background-image: url(/assets/ventana-al-mundo.jpeg);
+        }
+
+        & .contenedor-img {
+            width: 250px;
+            height: 350px;
+    
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 24px;
+
+            position: relative;
+            transition: .20s;
+
+            & div {
+                padding: 20px;
+                text-align: center;
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                border-radius: 24px;
+                background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%);
+                color: #E0E0E0;
+                font-weight: 600;
+            }
+
+            &:hover {
+                scale: 105%;
+            }
+        }
+    }
+
+}
