@@ -125,4 +125,6 @@ function cargarPregunta() {
 
 function mostrarPuntaje() {
     alert(quiz.puntaje + " preguntas correctas")
+    alert("Gracias por jugar nuestro Quiz :)")
+    window.location.href = "/"
 }
