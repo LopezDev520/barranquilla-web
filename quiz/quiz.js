@@ -34,7 +34,11 @@ export class Quiz {
         const preguntaActual = this.obtenerPreguntaActual();
         const opcionElegida = preguntaActual.opciones[indiceOpcion];
     
-        if (opcionElegida.correcta) this.puntaje++;
+        if (opcionElegida.correcta) {
+            this.puntaje++;
+            alert("Respuesta Correcta");
+        } else alert("Respuesta incorrecta");
+        
         this.indicePreguntaActual++;
         
         // Terminar el juego si ya no hay más preguntas
