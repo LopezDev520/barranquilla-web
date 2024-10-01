@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barranquilla - La arenosa - Quiz</title>
+    <!-- Hoja de estilo para el quiz -->
     <link rel="stylesheet" href="/css/quiz.css">
 </head>
 
 <body>
-
+    <!-- Contenedor principal -->
     <div class="container">
+        <!-- Encabezado con botón de retroceso -->
         <div class="header">
             <a href="/" class="back-button">&larr;</a>
         </div>
+        <!-- Contenido del quiz -->
         <div class="content">
+            <!-- Elemento para mostrar la pregunta -->
             <div class="question" id="pregunta"></div>
 
+            <!-- Contenedor de opciones de respuesta -->
             <div class="options">
+                <!-- Botones para las opciones de respuesta -->
                 <button class="option" id="opcion-1"></button>
                 <button class="option" id="opcion-2"></button>
                 <button class="option" id="opcion-3"></button>
@@ -26,6 +32,7 @@
         </div>
     </div>
 
+    <!-- Script JavaScript para la funcionalidad del quiz -->
     <script src="/quiz/app.js" type="module"></script>
 
 </body>

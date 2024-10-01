@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barranquilla - La arenosa</title>
+    <!-- Hojas de estilo externas -->
     <link rel="stylesheet" href="/css/layout.css" />
     <link rel="stylesheet" href="/css/comentarios.css" />
 </head>
 
 <body>
+    <!-- Barra de navegación superior -->
     <nav class="top">
+        <!-- Logo/enlace a la página principal -->
         <a href="/">
-            <img src="/assets/Escudo_de_Barranquilla.svg.png" alt="">
+            <img src="/assets/Escudo_de_Barranquilla.svg.png" alt="Escudo de Barranquilla">
         </a>
 
+        <!-- Enlaces de navegación -->
         <div>
             <a href="/historia">Historia</a>
             <a href="/lugares-turisticos/">Sitios destacados</a>
@@ -23,32 +27,34 @@
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main>
-        
+        <!-- Formulario para enviar comentarios -->
         <form>
-
+            <!-- Campo para el nombre de usuario -->
             <label>
                 <p>Nombre de Usuario:</p>
                 <input type="text" />
             </label>
 
+            <!-- Campo para el comentario -->
             <label>
                 <p>Comentario:</p>
                 <textarea></textarea>
             </label>
 
+            <!-- Botón para enviar el comentario -->
             <button>Enviar Comentario!</button>
-
         </form>
 
+        <!-- Sección donde se mostrarán los comentarios -->
         <section class="comments"></section>
-
     </main>
 
+    <!-- Pie de página -->
     <footer class="bottom">
         Barranquilla - La arenosa
     </footer>
-
 </body>
 
 </html>

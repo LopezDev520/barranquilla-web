@@ -1,7 +1,9 @@
 import { Quiz, Pregunta, Opcion } from "./quiz.js";
 
+// Función auxiliar para seleccionar elementos del DOM
 const $ = sel => document.querySelector(sel)
 
+// Array de preguntas para el quiz sobre la historia de Barranquilla
 const preguntas = [
     new Pregunta({
         textoPregunta: "¿En qué año se fundó oficialmente Barranquilla?",
@@ -95,24 +97,36 @@ const preguntas = [
     })
 ];
 
-// Elementos HTML del quiz
+// Selección del elemento HTML donde se mostrará la pregunta
 const preguntaEl = $("#pregunta")
 
+// Creación de una nueva instancia del quiz
 const quiz = new Quiz()
+
+// Agregar todas las preguntas al quiz
 preguntas.forEach(p => quiz.agregarPregunta(p))
 
+// Iniciar el quiz
 quiz.jugar()
+
+// Cargar la primera pregunta
 cargarPregunta()
 
+// Función para cargar y mostrar la pregunta actual
 function cargarPregunta() {
+    // Verificar si el quiz ha terminado
     if (!quiz.jugando || quiz.indicePreguntaActual >= quiz.preguntas.length) {
         mostrarPuntaje();
         return;
     }
 
+    // Obtener la pregunta actual
     const pregunta = quiz.obtenerPreguntaActual()
 
+    // Mostrar el texto de la pregunta
     preguntaEl.textContent = pregunta.textoPregunta
+
+    // Configurar los botones de opciones
     pregunta.opciones.forEach((opcion, i) => {
         const opcionButton = $(`#opcion-${i + 1}`)
         opcionButton.textContent = opcion.textoOpcion
@@ -123,6 +137,7 @@ function cargarPregunta() {
     })
 }
 
+// Función para mostrar el puntaje final y terminar el quiz
 function mostrarPuntaje() {
     alert(quiz.puntaje + " preguntas correctas")
     alert("Gracias por jugar nuestro Quiz :)")

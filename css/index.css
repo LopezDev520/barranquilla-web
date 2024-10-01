@@ -1,7 +1,8 @@
+/* Estilos para el elemento principal */
 main {
-
     padding: 20px;
 
+    /* Estilos para la sección hero */
     & .hero {
         border-radius: 24px;
         height: 400px;
@@ -12,6 +13,7 @@ main {
 
         position: relative;
 
+        /* Estilos para el div dentro del hero */
         & div {
             display: flex;
             flex-direction: column;
@@ -24,6 +26,7 @@ main {
             padding: 20px;
             color: #E0E0E0;
 
+            /* Estilos para el título h1 dentro del div del hero */
             & h1 {
                 font-family: 'Playwrite CU', cursive;
                 margin-top: 100px;
@@ -32,12 +35,14 @@ main {
 
     }
 
+    /* Estilos para el carrusel */
     & .carrusel {
         padding: 30px;
         display: flex;
         justify-content: center;
         gap: 20px;
 
+        /* Estilos para las imágenes específicas del carrusel */
         & #carnaval {
             background-image: url(/assets/carnaval.jpg);
         }
@@ -50,6 +55,7 @@ main {
             background-image: url(/assets/ventana-al-mundo.jpeg);
         }
 
+        /* Estilos para los contenedores de imágenes del carrusel */
         & .contenedor-img {
             width: 250px;
             height: 350px;
@@ -64,6 +70,7 @@ main {
             position: relative;
             transition: .20s;
 
+            /* Estilos para el div dentro de los contenedores de imágenes */
             & div {
                 padding: 20px;
                 text-align: center;
@@ -78,17 +85,20 @@ main {
                 font-weight: 600;
             }
 
+            /* Efecto hover para los contenedores de imágenes */
             &:hover {
                 scale: 105%;
             }
         }
     }
 
+    /* Estilos para el contenedor de invitación al quiz */
     & .invitacion-quiz-container {
 
         display: flex;
         justify-content: center;
 
+        /* Estilos para la invitación al quiz */
         & .invitacion-quiz {
             width: 80vw;
             height: 200px;
@@ -106,10 +116,12 @@ main {
             position: relative;
             transition: .20s;
 
+            /* Efecto hover para la invitación al quiz */
             &:hover {
                 scale: 1.15;
             }
 
+            /* Estilos para el div dentro de la invitación al quiz */
             & div {
                 padding: 20px;
                 text-align: center;
@@ -125,6 +137,4 @@ main {
             }
         }
     }
-
-
 }

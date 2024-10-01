@@ -1,7 +1,8 @@
+/* Estilos para el contenedor principal */
 main {
-
     padding: 20px;
 
+    /* Estilos para las secciones dentro del contenedor principal */
     & section {
         margin: 20px;
         display: flex;
@@ -11,6 +12,7 @@ main {
         border-radius: 24px;
         padding: 20px;
 
+        /* Estilos para los divs dentro de las secciones */
         & div {
             display: flex;
             flex-direction: column;
@@ -21,14 +23,14 @@ main {
             font-size: 20px;
         }
 
+        /* Estilos para los elementos span dentro de las secciones */
         & span {
             font-family: 'Playwrite CU', cursive;
         }
 
+        /* Estilos para las imágenes dentro de las secciones */
         & img {
             border-radius: 24px;
         }
     }
-
-
 }

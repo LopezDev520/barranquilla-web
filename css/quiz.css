@@ -1,14 +1,17 @@
+/* Reseteo básico de estilos para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Asegura que html y body ocupen toda la altura disponible */
 html, body {
     height: 100%;
     margin: 0;
 }
 
+/* Estilos generales para el body */
 body {
     background-color: #f7f7f7;
     color: #333;
@@ -19,6 +22,7 @@ body {
     height: 100%;
 }
 
+/* Contenedor principal del quiz */
 .container {
     border: 2px solid #ccc;
     padding: 20px;
@@ -32,11 +36,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para el encabezado */
 .header {
     display: flex;
     justify-content: flex-start;
 }
 
+/* Estilos para el botón de retroceso */
 .back-button {
     background: none;
     border: none;
@@ -46,6 +52,7 @@ body {
     text-decoration: none;
 }
 
+/* Estilos para el contenido principal */
 .content {
     display: flex;
     flex-direction: column;
@@ -54,6 +61,7 @@ body {
     flex-grow: 1;
 }
 
+/* Estilos para la pregunta */
 .question {
     font-size: 24px;
     margin-bottom: 30px;
@@ -61,6 +69,7 @@ body {
     text-align: center;
 }
 
+/* Contenedor de las opciones de respuesta */
 .options {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,6 +78,7 @@ body {
     max-width: 400px;
 }
 
+/* Estilos para cada opción de respuesta */
 .option {
     background-color: #f1f1f1;
     color: #333;
@@ -81,6 +91,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Efecto hover para las opciones */
 .option:hover {
     background-color: #007BFF;
     color: #fff;

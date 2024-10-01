@@ -8,6 +8,7 @@ main {
         padding: 20px;
         gap: 20px;
 
+        /* Estilos para el contenedor de imágenes */
         & .contenedor-img {
             position: relative;
             background-position: center;
@@ -17,7 +18,7 @@ main {
             text-align: centers;
             border-radius: 24px;
 
-
+            /* Estilos para el div interno (texto sobre la imagen) */
             & div {
                 position: absolute;
                 padding: 50px 0px;
@@ -26,6 +27,7 @@ main {
                 align-items: flex-end;
                 justify-content: center;
                 border-radius: 24px;
+                /* Gradiente para mejorar la legibilidad del texto */
                 background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%);
                 color: #E0E0E0;
                 font-weight: 800;
@@ -34,6 +36,7 @@ main {
 
         }
 
+        /* Imágenes de fondo para cada lugar turístico */
         & #gran-malecon { background-image: url(/assets/lugares/gran-malecon.jpeg); }
         & #ventana-al-mundo { background-image: url(/assets/lugares/ventana-al-mundo.jpg); }
         & #estadio-metropolitano { background-image: url(/assets/lugares/estadio-Metropolitano-Barranquilla.jpg); }
