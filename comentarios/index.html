@@ -11,6 +11,16 @@
 </head>
 
 <body>
+
+    <!-- Template: copiar para crear comentarios desde JS -->
+    <template id="temp-comentario">
+        <article class="comentario">
+            <h3>Hecho por: <span class="nombre-usuario">Wilson Lopez</span></h3>
+            <p class="cuerpo-comentario">Que bella ciudad, espero volver algún dia</p>
+        </article>
+    </template>
+    <!-- Template: copiar para crear comentarios desde JS -->
+
     <!-- Barra de navegación superior -->
     <nav class="top">
         <!-- Logo/enlace a la página principal -->
@@ -23,32 +33,36 @@
             <a href="/historia">Historia</a>
             <a href="/lugares-turisticos/">Sitios destacados</a>
             <a href="/quiz">Quiz</a>
-            <a href="/comentarios">Comentarios</a>
+            <a href="#">Comentarios</a>
         </div>
     </nav>
 
     <!-- Contenido principal -->
     <main>
         <!-- Formulario para enviar comentarios -->
-        <form>
-            <!-- Campo para el nombre de usuario -->
-            <label>
-                <p>Nombre de Usuario:</p>
-                <input type="text" />
-            </label>
+        <div class="center">
+            <form>
+                <!-- Campo para el nombre de usuario -->
+                <label>
+                    <p>Nombre de Usuario:</p>
+                    <input id="inp-nombre-usuario" type="text" />
+                </label>
 
-            <!-- Campo para el comentario -->
-            <label>
-                <p>Comentario:</p>
-                <textarea></textarea>
-            </label>
+                <!-- Campo para el comentario -->
+                <label>
+                    <p>Comentario:</p>
+                    <textarea id="txt-comentario"></textarea>
+                </label>
 
-            <!-- Botón para enviar el comentario -->
-            <button>Enviar Comentario!</button>
-        </form>
+                <!-- Botón para enviar el comentario -->
+                <button>Enviar Comentario!</button>
+            </form>
+        </div>
 
         <!-- Sección donde se mostrarán los comentarios -->
-        <section class="comments"></section>
+        <section class="comentarios"></section>
+
+        <script src="/comentarios/comentarios.js"></script>
     </main>
 
     <!-- Pie de página -->
